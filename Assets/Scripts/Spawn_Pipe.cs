@@ -41,7 +41,7 @@ public class Spawn_Pipe : MonoBehaviour
 
     private void spawn(GameObject pipe) {
         Instantiate(pipe, position, Quaternion.identity);
-        random_pos = random.Next(4, 7) + (float)random.NextDouble();
+        random_pos = random.Next(4, 8) + (float)random.NextDouble();
         position = transform.position + new Vector3 (0, random_pos, 0);
     }
 }
